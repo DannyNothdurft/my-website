@@ -44,7 +44,7 @@ function Home() {
             <div className="about-me">
                 <h2>Über mich</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quos deserunt, maxime sint sunt tempore quidem ad praesentium itaque, aspernatur, magnam culpa iste adipisci?
+                    Ich finde es schwer über sich selbst zu schreiben. Daher wird dieses Feld erst ausgefüllt, wenn alles andere fertig ist.
                 </p>
             </div>
 

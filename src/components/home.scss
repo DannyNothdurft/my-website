@@ -210,23 +210,43 @@
 
 // Media Screen
 
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
     .home-container {
-        padding: 150px 40px;
-        margin-top: 20px;
-        overflow: hidden;
-
         .profilPic {
-            height: 220px;
-            width: 220px;
+            height: 480px;
+            width: 480px;
 
             .hover-show {
-                height: 220px;
-                width: 220px;
-                
+                height: 275px;
+                width: 275px;
+
                 .circle {
                     height: 90px;
                     width: 90px;
+                }
+            }
+
+            img {
+                height: 275px;
+                width: 275px;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .home-container {
+        .profilPic {
+            height: 300px;
+            width: 300px;
+
+            .hover-show {
+                height: 250px;
+                width: 250px;
+                
+                .circle {
+                    height: 82px;
+                    width: 82px;
                 }
             }
 
@@ -235,23 +255,22 @@
                 width: 250px;
             }
         }
-
-        h2 {
-            max-width: 100%;
-            margin-top: 200px;
-        }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 680px) {
     .home-container {
-        padding: 150px 30px;
-
         .profilPic {
+            height: 250px;
+            width: 250px;
+
             .hover-show {
+                height: 200px;
+                width: 200px;
+                
                 .circle {
-                    height: 75px;
-                    width: 75px;
+                    height: 68px;
+                    width: 68px;
                 }
             }
 
@@ -263,49 +282,63 @@
 
         .scroll-down {
             right: -70px;
-            top: 45%;
+            top: 50%;
         }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .home-container {
-        padding: 150px 10px 0;
+        .profilPic {
+            height: 230px;
+            width: 230px;
 
+            .hover-show {
+                height: 180px;
+                width: 180px;
+                
+                .circle {
+                    height: 62px;
+                    width: 62px;
+                }
+            }
+
+            img {
+                height: 180px;
+                width: 180px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .home-container {
         .profilPic {
             height: 180px;
             width: 180px;
 
             .hover-show {
-                height: 180px;
-                width: 180px;
+                height: 120px;
+                width: 120px;
+                
                 .circle {
-                    height: 65px;
-                    width: 65px;
+                    height: 45px;
+                    width: 45px;
                 }
             }
 
             img {
-                height: 185px;
-                width: 185px;
+                height: 120px;
+                width: 120px;
             }
         }
 
         .scroll-down {
-            right: -70px;
-            top: 45%;
+            right: -80px;
         }
 
-        h2 {
-            margin-top: 250px;
-
-            span {
-                font-size: 22px;
-            }
-
-            p {
-                font-size: 18px;
-            }
+        .about-me {
+            margin-top: 30px;
         }
     }
 }
