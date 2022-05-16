@@ -18,7 +18,7 @@ function Home() {
     }
     
     return (
-        <div id='home' className="home-container">
+        <div className="home-container">
             <div className="profilPic" onClick={toggleClassName}>
                 <div className={ toggle ? 'hover-show active' : 'hover-show' }>
                     <span className="circle"></span>
@@ -41,12 +41,12 @@ function Home() {
                 <hr />
             </a>
 
-            <h2>
-                <span>Über mich</span> <br />
+            <div className="about-me">
+                <h2>Über mich</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id quos deserunt, maxime sint sunt tempore quidem ad praesentium itaque, aspernatur, magnam culpa iste adipisci?
                 </p>
-            </h2>
+            </div>
 
             <Buttons />
         </div>

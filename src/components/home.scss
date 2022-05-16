@@ -1,138 +1,133 @@
 @import "app.scss";
 
 .home-container {
-    position: relative;
     min-height: 100vh;
-    padding: 50px 40px;
-    margin-top: 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .profilPic {
-        position: inherit;
-        margin-top: -50px;
-        height: 520px;
-        width: 520px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        user-select: none;
-
-        .hover-show {
-            position: absolute;
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
+        .profilPic {
+            position: relative;
+            height: 520px;
+            width: 520px;
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 5;
-            cursor: pointer;
+            // Verhindert das auswählen des Bildes
+            user-select: none;
 
-            &.active {
-                animation: showspin 8s linear 1s infinite;
-
-                .circle {
-                    opacity: 1;
-                }
-            }
-
-            .circle {
-                position: absolute;
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                background-color: rgb(4, 4, 44);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: 0.2s ease;
-                opacity: 0;
-
-                &:nth-child(1) {
-                    background: url(../img/html.png);
-                    background-size: cover;
-                    background-position: center;
+                .hover-show {
                     position: absolute;
-                    transform: translateY(-210%);
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                        &.active {
+                            animation: showspin 8s linear 0.3s infinite;
+                        
+                                .circle {
+                                    opacity: 1;
+                                }
+                        }
+
+                        .circle {
+                            position: absolute;
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            background-color: rgb(4, 4, 44);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.2s ease;
+                            opacity: 0;
+
+                                &:nth-child(1) {
+                                    background: url(../img/html.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateY(-210%);
+                                }
+
+                                &:nth-child(2) {
+                                    background: url(../img/css.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(150%) translateY(-150%);
+                                }
+
+                                &:nth-child(3) {
+                                    background: url(../img/js.jpg);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(210%);
+                                }
+
+                                &:nth-child(4) {
+                                    background: url(../img/sass.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(150%) translateY(150%);
+                                }
+
+                                &:nth-child(5) {
+                                    background: url(../img/react.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateY(210%);
+                                }
+
+                                &:nth-child(6) {
+                                    background: url(../img/nodejs.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(-150%) translateY(150%);
+                                }
+
+                                &:nth-child(7) {
+                                    background: url(../img/mongodb.jpeg);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(-210%);
+                                }
+
+                                &:nth-child(8) {
+                                    background: url(../img/git.png);
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    transform: translateX(-150%) translateY(-150%);
+                                }
+                        }
                 }
 
-                &:nth-child(2) {
-                    background: url(../img/css.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(150%) translateY(-150%);
+                img {
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                    border: 1px solid $color-pri;
+                    box-shadow: 0px 0px 2px 5px $color-pri;
+                    transform: translate(-200px);
+                    opacity: 0;
+                                    animation: img-in 2s ease 1.5s forwards;
                 }
-
-                &:nth-child(3) {
-                    background: url(../img/js.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(210%);
-                }
-
-                &:nth-child(4) {
-                    background: url(../img/react.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(150%) translateY(150%);
-                }
-
-                &:nth-child(5) {
-                    background: url(../img/react.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateY(210%);
-                }
-
-                &:nth-child(6) {
-                    background: url(../img/react.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(-150%) translateY(150%);
-                }
-
-                &:nth-child(7) {
-                    background: url(../img/react.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(-210%);
-                }
-
-                &:nth-child(8) {
-                    background: url(../img/react.png);
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateX(-150%) translateY(-150%);
-                }
-            }
         }
 
-        img {
-            position: absolute;
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            border: 3px solid rgb(108, 161, 197);
-            transform: translate(-200px);
-            opacity: 0;
-            animation: fade-in-img 2s ease  1.5s forwards;
-        }
-    }
-
-    .scroll-down {
+        .scroll-down {
         position: absolute;
-        right: 0;
+        right: -30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -140,71 +135,67 @@
         cursor: pointer;
         transform: translate(200px) rotate(90deg);
         opacity: 0;
-        animation: fade-in-scrollDown 2s ease  1.5s forwards;
+        animation: scrollDown-in 2s ease  2.5s forwards;
 
-        hr {
-            color: $color-pri;
-            width: 20px;
+            hr {
+                color: $color-pri;
+                width: 20px;
+            }
+
+            h5 {
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+
+            .scroll {
+                transform: rotate(-90deg);
+                font-size: 20px;
+            }
         }
 
-        h5 {
-            font-size: 18px;
-            text-transform: capitalize;
-            font-weight: 100;
-        }
-
-        .scroll {
-            transform: rotate(-90deg);
-            font-size: 20px;
-        }
-    }
-
-    h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        .about-me {
         max-width: 60%;
         margin-top: 50px;
         transform: translateY(100px);
         opacity: 0;
-        animation: fade-in-text 2s ease  3.0s forwards;
+        animation: text-in 2s ease  2s forwards;
 
-        span {
-            font-size: 25px;
-            opacity: 0.8;
-            padding-bottom: 2px;
-            border-bottom: 2px solid $color-pri;
-            font-family: "Open Sans Condensed", sans-serif;
-        }
+            h2 {
+                font-size: calc( 13px + 1vmin );
+                width: max-content;
+                margin: 0 auto;
+                opacity: 0.8;
+                padding-bottom: 2px;
+                border-bottom: 2px solid $color-pri;
+                font-family: "Open Sans Condensed", sans-serif;
+            }
 
-        p {
-            font-size: 20px;
-            opacity: 1;
-            font-weight: 100;
-            margin-top: 30px;
-            font-family: "Open Sans", sans-serif;
+            p {
+                font-size: calc( 10px + 1vmin );
+                font-weight: 100;
+                margin-top: 30px;
+                font-family: "Open Sans", sans-serif;
+            }
         }
-    }
 }
 
 // Keyframes
-@keyframes fade-in-img {
+@keyframes img-in {
     to {
       transform: translate(0);
       opacity: 1;
     }
 }
 
-@keyframes fade-in-text {
+@keyframes text-in {
     to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
-@keyframes fade-in-scrollDown {
+@keyframes scrollDown-in {
     to {
         transform: translate(0) rotate(90deg);
         opacity: 1;
@@ -213,7 +204,7 @@
 
 @keyframes showspin {
     to {
-      transform: rotate(360deg);
+      transform: rotateZ(360deg);
     }
 }
 
