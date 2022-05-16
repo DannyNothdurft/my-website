@@ -6,10 +6,6 @@ $color-pri: rgb(82, 188, 250);
 $color-pri-light: rgba(82, 188, 250, 0.445);
 $color-sec: rgb(172, 17, 233);
 $color-sec-light: rgba(172, 17, 233, 0.274);
-  
-$pc-width: 75%;
-$tab-width: 90%;
-$phone-width: 100%;
 
 * {
     margin: 0;
@@ -71,27 +67,8 @@ body {
         filter: blur(150px);
     }
 
-    .container {
-        border-radius: 10px;
-        width: var(--pc-width);
-        color: var(--text-pri);
-        padding: 10px 40px;
-        margin: 5px auto;
-        padding: 10px 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     // googeln was das ist
     // ::-webkit-scrollbar {
     //     width: 0;
     // }
-}
-
-// MediaScreen 
-
-@media (max-width: 500px) {
-    .container {
-      width: var(--phone-width);
-    }
 }

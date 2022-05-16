@@ -1,0 +1,90 @@
+@import './app.scss';
+
+.projects-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 100px;
+    width: 1000px;
+    margin: 0 auto;
+
+        .project-txt {
+            font-size: 25px;
+            opacity: 0.8;
+            padding-bottom: 2px;
+            border-bottom: 2px solid $color-pri;
+            font-family: "Open Sans Condensed", sans-serif;
+        }
+
+        .project {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            background: rgba(0, 0, 0, 0.116);
+            padding: 20px;
+            border-radius: 50px;
+
+                .project-img {
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 40px;
+                    background: rgb(5, 7, 37) url(../img/427.png);
+                    background-size: cover;
+                    background-position: center;
+                    border: 2px solid var(--color-sec-light);
+                }
+
+                .project-info {
+                    margin-left: 50px;
+                    font-family: "Open Sans Condensed";
+                    max-width: 50%;
+
+                        .project-name {
+                            font-size: 40px;
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                        }
+
+                        .project-category {
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 2px;
+                        }
+
+                        .project-description {
+                            margin-top: 40px;
+                            font-weight: 100;
+                            font-size: 17px;
+                        }
+
+                        .contact-project {
+                            background-color: $color-sec-light;
+                            padding: 17px 35px;
+                            font-size: 18px;
+                            margin-top: 50px;
+                            border-radius: 50px;
+                            position: absolute;
+                            transition: 0.1s ease;
+
+                            span {
+                                text-transform: capitalize;
+                            }
+
+                            &:hover {
+                                background-color: transparent;
+                                border: 2px solid $color-sec-light;
+                            }
+                        }
+                }
+        }
+
+
+
+}

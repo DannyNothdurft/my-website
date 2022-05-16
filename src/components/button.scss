@@ -1,0 +1,81 @@
+@import "app.scss";
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 60%;
+    padding: 0;
+
+    .btn {
+        border-radius: 15px;
+        height: 80px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+
+        &.pri {
+            border: 2px solid $color-sec;
+
+            &:hover {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    background-color: $color-sec;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 80px;
+                    opacity: 0.5;
+                    transition: 1s ease-in-out;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                background-color: $color-sec;
+                border-radius: 15px;
+                width: 0px;
+                height: 0px;
+                opacity: 0.5;
+                transition: 1s ease-in-out;
+            }
+        }
+
+        &.sec {
+            border: 2px solid $color-pri;
+
+            &:hover {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0px;
+                    background-color: $color-pri;
+                    border-radius: 15px;
+                    width: 200px;
+                    height: 80px;
+                    opacity: 0.5;
+                    transition: 1s ease-in-out;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0px;
+                background-color: $color-pri;
+                border-radius: 15px;
+                width: 0px;
+                height: 0px;
+                opacity: 0.5;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+}
