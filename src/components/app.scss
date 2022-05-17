@@ -16,16 +16,14 @@ $color-sec-light: rgba(172, 17, 233, 0.274);
     z-index: 1;
 }
 
-// Googeln was das ist
-// html {
-//     scroll-behavior: smooth;
-// }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: rgb( 2, 2, 26);
     min-height: 100vh;
     font-family: "Inter", sans-serif;
-    // animation: move 1s linear infinite forwards;
 
     &::before {
         content: "";
@@ -66,9 +64,4 @@ body {
         background: rgb(183, 0, 255);
         filter: blur(150px);
     }
-
-    // googeln was das ist
-    // ::-webkit-scrollbar {
-    //     width: 0;
-    // }
 }
