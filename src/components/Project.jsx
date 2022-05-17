@@ -13,8 +13,21 @@ const Project = () => {
           <h4 className="project-description">
             Eine kleine Web-Apllikation mit leichte Rechenaufgaben.
           </h4>
-          <a href="#contact" className="contact-project">
-            <span>contact</span>
+          <a href="https://gehirn-training.netlify.app/" target={"blank"} className="contact-project">
+            <span>zur Website</span>
+          </a>
+        </div>
+      </div>
+      <div className="project project-2">
+        <div className="project-img"></div>
+        <div className="project-info">
+          <h2 className="project-name">Drink Randomly</h2>
+          <h3 className="project-category">Web-Aplikation</h3>
+          <h4 className="project-description">
+            Eine kleine Web-Apllikation als Trinkspiel.
+          </h4>
+          <a href="https://drinkrandomly.netlify.app/" target={"blank"} className="contact-project">
+            <span>zur Website</span>
           </a>
         </div>
       </div>
