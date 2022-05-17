@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 function Contact() {
   return (
-    <div id="contact" className="container contact-container">
+    <div id="contact" className="contact-container">
       <h1>Kontakt</h1>
       <div className="contact-links">
         <a
