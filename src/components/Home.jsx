@@ -1,11 +1,8 @@
 import React, {useState} from "react";
 import "./home.scss";
 
-// Components
-import Buttons from "./Button";
-
 // Images & Icons
-import prodilImage from '../img/profilPic.png'
+import prodilImage from '../img/profilPic.jpeg'
 import { BsMouse } from 'react-icons/bs';
 
 
@@ -47,8 +44,6 @@ function Home() {
                     Ich finde es schwer über sich selbst zu schreiben. Daher wird dieses Feld erst ausgefüllt, wenn alles andere fertig ist.
                 </p>
             </div>
-
-            <Buttons />
         </div>
     )
 }

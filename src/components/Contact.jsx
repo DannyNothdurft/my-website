@@ -32,8 +32,12 @@ function Contact() {
           </h2>
         </a>
 
-        <a href="https://instagram.com/d.nothdurft" className="contact instagram">
-          <AiOutlineInstagram className="icon" />
+        <a
+          href="https://instagram.com/d.nothdurft"
+          className="contact instagram"
+          target={"blank"}>
+          <AiOutlineInstagram className="icon"
+        />
           <h2>
             instagram <span>Danny Nothdurft</span>
           </h2>

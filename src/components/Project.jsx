@@ -11,7 +11,7 @@ const Project = () => {
           <h2 className="project-name">Gehirn Training</h2>
           <h3 className="project-category">Web-Aplikation</h3>
           <h4 className="project-description">
-            Eine kleine Web-Apllikation mit leichte Rechenaufgaben.
+            Eine kleine Web-Apllikation mit leichten Rechenaufgaben.
           </h4>
           <a href="https://gehirn-training.netlify.app/" target={"blank"} className="contact-project">
             <span>zur Website</span>

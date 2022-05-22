@@ -1,0 +1,1 @@
+exports.DCIERPROBUNGSCENTER = require('../img/zertifikat.png')
